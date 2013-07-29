@@ -1,5 +1,5 @@
 //
-//  FMNextBus.h
+//  FMAgencyFeedParser.h
 //  FMNextBus
 //
 //  Created by Felix Mo on 2013-07-28.
@@ -7,10 +7,11 @@
 //
 
 
-// External
-#import "AFNetworking.h"
-
-// Internal
-#import "FMNextBusConstants.h"
 #import "FMAgency.h"
-#import "FMRoute.h"
+
+
+@interface FMAgencyParser : NSObject <NSXMLParserDelegate>
+
+- (NSArray *)parsedFeeds;
+
+@end
