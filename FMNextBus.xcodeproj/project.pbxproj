@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCDA1BD917A5F46800A971CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDA1BD817A5F46800A971CF /* Foundation.framework */; };
+		DCDA1BDE17A5F46800A971CF /* FMNextBus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCDA1BDD17A5F46800A971CF /* FMNextBus.h */; };
+		DCDA1BE817A5F46800A971CF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDA1BE717A5F46800A971CF /* SenTestingKit.framework */; };
+		DCDA1BEA17A5F46800A971CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDA1BE917A5F46800A971CF /* UIKit.framework */; };
+		DCDA1BEB17A5F46800A971CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDA1BD817A5F46800A971CF /* Foundation.framework */; };
+		DCDA1BEE17A5F46800A971CF /* libFMNextBus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDA1BD517A5F46800A971CF /* libFMNextBus.a */; };
+		DCDA1BF417A5F46800A971CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCDA1BF217A5F46800A971CF /* InfoPlist.strings */; };
+		DCDA1BF717A5F46800A971CF /* FMNextBusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDA1BF617A5F46800A971CF /* FMNextBusTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCDA1BEC17A5F46800A971CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCDA1BCD17A5F46800A971CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCDA1BD417A5F46800A971CF;
+			remoteInfo = FMNextBus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCDA1BD317A5F46800A971CF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				DCDA1BDE17A5F46800A971CF /* FMNextBus.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DCDA1BD517A5F46800A971CF /* libFMNextBus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMNextBus.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCDA1BD817A5F46800A971CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCDA1BDC17A5F46800A971CF /* FMNextBus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FMNextBus-Prefix.pch"; sourceTree = "<group>"; };
+		DCDA1BDD17A5F46800A971CF /* FMNextBus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMNextBus.h; sourceTree = "<group>"; };
+		DCDA1BE617A5F46800A971CF /* FMNextBusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMNextBusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCDA1BE717A5F46800A971CF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DCDA1BE917A5F46800A971CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DCDA1BF117A5F46800A971CF /* FMNextBusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FMNextBusTests-Info.plist"; sourceTree = "<group>"; };
+		DCDA1BF317A5F46800A971CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCDA1BF517A5F46800A971CF /* FMNextBusTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMNextBusTests.h; sourceTree = "<group>"; };
+		DCDA1BF617A5F46800A971CF /* FMNextBusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMNextBusTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCDA1BD217A5F46800A971CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDA1BD917A5F46800A971CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCDA1BE217A5F46800A971CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDA1BE817A5F46800A971CF /* SenTestingKit.framework in Frameworks */,
+				DCDA1BEA17A5F46800A971CF /* UIKit.framework in Frameworks */,
+				DCDA1BEB17A5F46800A971CF /* Foundation.framework in Frameworks */,
+				DCDA1BEE17A5F46800A971CF /* libFMNextBus.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCDA1BCC17A5F46800A971CF = {
+			isa = PBXGroup;
+			children = (
+				DCDA1BDA17A5F46800A971CF /* FMNextBus */,
+				DCDA1BEF17A5F46800A971CF /* FMNextBusTests */,
+				DCDA1BD717A5F46800A971CF /* Frameworks */,
+				DCDA1BD617A5F46800A971CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCDA1BD617A5F46800A971CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCDA1BD517A5F46800A971CF /* libFMNextBus.a */,
+				DCDA1BE617A5F46800A971CF /* FMNextBusTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCDA1BD717A5F46800A971CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCDA1BD817A5F46800A971CF /* Foundation.framework */,
+				DCDA1BE717A5F46800A971CF /* SenTestingKit.framework */,
+				DCDA1BE917A5F46800A971CF /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCDA1BDA17A5F46800A971CF /* FMNextBus */ = {
+			isa = PBXGroup;
+			children = (
+				DCDA1BDD17A5F46800A971CF /* FMNextBus.h */,
+				DCDA1BDB17A5F46800A971CF /* Supporting Files */,
+			);
+			path = FMNextBus;
+			sourceTree = "<group>";
+		};
+		DCDA1BDB17A5F46800A971CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCDA1BDC17A5F46800A971CF /* FMNextBus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCDA1BEF17A5F46800A971CF /* FMNextBusTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCDA1BF517A5F46800A971CF /* FMNextBusTests.h */,
+				DCDA1BF617A5F46800A971CF /* FMNextBusTests.m */,
+				DCDA1BF017A5F46800A971CF /* Supporting Files */,
+			);
+			path = FMNextBusTests;
+			sourceTree = "<group>";
+		};
+		DCDA1BF017A5F46800A971CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCDA1BF117A5F46800A971CF /* FMNextBusTests-Info.plist */,
+				DCDA1BF217A5F46800A971CF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCDA1BD417A5F46800A971CF /* FMNextBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCDA1BFA17A5F46800A971CF /* Build configuration list for PBXNativeTarget "FMNextBus" */;
+			buildPhases = (
+				DCDA1BD117A5F46800A971CF /* Sources */,
+				DCDA1BD217A5F46800A971CF /* Frameworks */,
+				DCDA1BD317A5F46800A971CF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMNextBus;
+			productName = FMNextBus;
+			productReference = DCDA1BD517A5F46800A971CF /* libFMNextBus.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DCDA1BE517A5F46800A971CF /* FMNextBusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCDA1BFD17A5F46800A971CF /* Build configuration list for PBXNativeTarget "FMNextBusTests" */;
+			buildPhases = (
+				DCDA1BE117A5F46800A971CF /* Sources */,
+				DCDA1BE217A5F46800A971CF /* Frameworks */,
+				DCDA1BE317A5F46800A971CF /* Resources */,
+				DCDA1BE417A5F46800A971CF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCDA1BED17A5F46800A971CF /* PBXTargetDependency */,
+			);
+			name = FMNextBusTests;
+			productName = FMNextBusTests;
+			productReference = DCDA1BE617A5F46800A971CF /* FMNextBusTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCDA1BCD17A5F46800A971CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Felix Mo";
+			};
+			buildConfigurationList = DCDA1BD017A5F46800A971CF /* Build configuration list for PBXProject "FMNextBus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DCDA1BCC17A5F46800A971CF;
+			productRefGroup = DCDA1BD617A5F46800A971CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCDA1BD417A5F46800A971CF /* FMNextBus */,
+				DCDA1BE517A5F46800A971CF /* FMNextBusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCDA1BE317A5F46800A971CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDA1BF417A5F46800A971CF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DCDA1BE417A5F46800A971CF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCDA1BD117A5F46800A971CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCDA1BE117A5F46800A971CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDA1BF717A5F46800A971CF /* FMNextBusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCDA1BED17A5F46800A971CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCDA1BD417A5F46800A971CF /* FMNextBus */;
+			targetProxy = DCDA1BEC17A5F46800A971CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCDA1BF217A5F46800A971CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCDA1BF317A5F46800A971CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCDA1BF817A5F46800A971CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DCDA1BF917A5F46800A971CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCDA1BFB17A5F46800A971CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FMNextBus.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FMNextBus/FMNextBus-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DCDA1BFC17A5F46800A971CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FMNextBus.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FMNextBus/FMNextBus-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DCDA1BFE17A5F46800A971CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FMNextBus/FMNextBus-Prefix.pch";
+				INFOPLIST_FILE = "FMNextBusTests/FMNextBusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DCDA1BFF17A5F46800A971CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FMNextBus/FMNextBus-Prefix.pch";
+				INFOPLIST_FILE = "FMNextBusTests/FMNextBusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCDA1BD017A5F46800A971CF /* Build configuration list for PBXProject "FMNextBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCDA1BF817A5F46800A971CF /* Debug */,
+				DCDA1BF917A5F46800A971CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCDA1BFA17A5F46800A971CF /* Build configuration list for PBXNativeTarget "FMNextBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCDA1BFB17A5F46800A971CF /* Debug */,
+				DCDA1BFC17A5F46800A971CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCDA1BFD17A5F46800A971CF /* Build configuration list for PBXNativeTarget "FMNextBusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCDA1BFE17A5F46800A971CF /* Debug */,
+				DCDA1BFF17A5F46800A971CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCDA1BCD17A5F46800A971CF /* Project object */;
+}
