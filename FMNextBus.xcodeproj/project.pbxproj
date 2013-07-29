@@ -27,7 +27,6 @@
 		DCF4798517A5F8A2005AA7ED /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF4798417A5F8A2005AA7ED /* MobileCoreServices.framework */; };
 		DCF4798817A5FC8D005AA7ED /* FMAgency.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF4798717A5FC8D005AA7ED /* FMAgency.m */; };
 		DCF4798B17A5FE6C005AA7ED /* FMNextBusConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF4798A17A5FE6C005AA7ED /* FMNextBusConstants.m */; };
-		DCF4799117A5FF8F005AA7ED /* NSURLRequest+FMNextBus.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF4799017A5FF8F005AA7ED /* NSURLRequest+FMNextBus.m */; };
 		DCF4799417A60511005AA7ED /* FMAgencyParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF4799317A60511005AA7ED /* FMAgencyParser.m */; };
 		DCF4799817A60B84005AA7ED /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF4799717A60B84005AA7ED /* CFNetwork.framework */; };
 		DCF4799A17A60B88005AA7ED /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF4799917A60B88005AA7ED /* Security.framework */; };
@@ -40,6 +39,7 @@
 		DCF479A817A61A84005AA7ED /* FMRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF479A717A61A84005AA7ED /* FMRoute.m */; };
 		DCF479AC17A61EE9005AA7ED /* FMRouteParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF479AB17A61EE9005AA7ED /* FMRouteParser.m */; };
 		DCF479AF17A6210E005AA7ED /* FMRouteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF479AE17A6210E005AA7ED /* FMRouteTests.m */; };
+		DCF479B217A62449005AA7ED /* NSURLRequest+FMNextBus.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF479B117A62449005AA7ED /* NSURLRequest+FMNextBus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,8 +100,6 @@
 		DCF4798717A5FC8D005AA7ED /* FMAgency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMAgency.m; sourceTree = "<group>"; };
 		DCF4798917A5FE6C005AA7ED /* FMNextBusConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMNextBusConstants.h; sourceTree = "<group>"; };
 		DCF4798A17A5FE6C005AA7ED /* FMNextBusConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMNextBusConstants.m; sourceTree = "<group>"; };
-		DCF4798F17A5FF8F005AA7ED /* NSURLRequest+FMNextBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+FMNextBus.h"; path = "../NSURLRequest+FMNextBus.h"; sourceTree = "<group>"; };
-		DCF4799017A5FF8F005AA7ED /* NSURLRequest+FMNextBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+FMNextBus.m"; path = "../NSURLRequest+FMNextBus.m"; sourceTree = "<group>"; };
 		DCF4799217A60511005AA7ED /* FMAgencyParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMAgencyParser.h; sourceTree = "<group>"; };
 		DCF4799317A60511005AA7ED /* FMAgencyParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMAgencyParser.m; sourceTree = "<group>"; };
 		DCF4799717A60B84005AA7ED /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -115,6 +113,8 @@
 		DCF479AB17A61EE9005AA7ED /* FMRouteParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRouteParser.m; sourceTree = "<group>"; };
 		DCF479AD17A6210E005AA7ED /* FMRouteTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRouteTests.h; sourceTree = "<group>"; };
 		DCF479AE17A6210E005AA7ED /* FMRouteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRouteTests.m; sourceTree = "<group>"; };
+		DCF479B017A62449005AA7ED /* NSURLRequest+FMNextBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+FMNextBus.h"; sourceTree = "<group>"; };
+		DCF479B117A62449005AA7ED /* NSURLRequest+FMNextBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+FMNextBus.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,8 +268,8 @@
 		DCF479A217A613AF005AA7ED /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				DCF4798F17A5FF8F005AA7ED /* NSURLRequest+FMNextBus.h */,
-				DCF4799017A5FF8F005AA7ED /* NSURLRequest+FMNextBus.m */,
+				DCF479B017A62449005AA7ED /* NSURLRequest+FMNextBus.h */,
+				DCF479B117A62449005AA7ED /* NSURLRequest+FMNextBus.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -394,10 +394,10 @@
 				DCF4798117A5F87A005AA7ED /* UIImageView+AFNetworking.m in Sources */,
 				DCF4798817A5FC8D005AA7ED /* FMAgency.m in Sources */,
 				DCF4798B17A5FE6C005AA7ED /* FMNextBusConstants.m in Sources */,
-				DCF4799117A5FF8F005AA7ED /* NSURLRequest+FMNextBus.m in Sources */,
 				DCF4799417A60511005AA7ED /* FMAgencyParser.m in Sources */,
 				DCF479A817A61A84005AA7ED /* FMRoute.m in Sources */,
 				DCF479AC17A61EE9005AA7ED /* FMRouteParser.m in Sources */,
+				DCF479B217A62449005AA7ED /* NSURLRequest+FMNextBus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
