@@ -29,7 +29,7 @@
 @property (nonatomic, strong) NSString *tag;
 
 /**
- The agency.
+ The agency this route belongs to.
  
  This object is used to identify the transit agency in the NextBus system.
  */
