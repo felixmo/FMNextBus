@@ -14,3 +14,7 @@
 #import "FMNextBusConstants.h"
 #import "FMAgency.h"
 #import "FMRoute.h"
+#import "FMStop.h"
+#import "FMPredictionSet.h"
+#import "FMPrediction.h"
+#import "FMDirection.h"

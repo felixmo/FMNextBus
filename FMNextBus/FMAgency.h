@@ -7,6 +7,9 @@
 //
 
 
+@class FMRoute;
+
+
 /**
  Represents transit agencies
  */
@@ -71,5 +74,11 @@
  On completion, an array containing all of the routes for the transit agency as FMRoute objects is given
  */
 - (void)fetchRoutesOnSuccess:(void(^)(NSArray *routes))success failure:(void(^)(NSError *error))failure;
+
+/**
+ On completion, return the requested route if found.
+ */
+- (void)fetchRouteWithTag:(NSString *)routeTag success:(void(^)(FMRoute *route))success failure:(void(^)(NSError *error))failure;
+
 
 @end

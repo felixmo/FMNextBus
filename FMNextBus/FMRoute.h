@@ -6,6 +6,10 @@
 //  Copyright (c) 2013 Felix Mo. All rights reserved.
 //
 
+
+@class FMAgency;
+
+
 /**
  Represents transit agency routes
  */
@@ -23,6 +27,13 @@
  This string is used to identify the route in the NextBus system.
  */
 @property (nonatomic, strong) NSString *tag;
+
+/**
+ The agency.
+ 
+ This object is used to identify the transit agency in the NextBus system.
+ */
+@property (nonatomic, strong) FMAgency *agency;
 
 /**
  The title of the route.

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47A1B95617E758D500121BCA /* FMStopParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A1B95517E758D500121BCA /* FMStopParser.m */; };
+		47A1B95817E75D0700121BCA /* FMStopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A1B95717E75D0700121BCA /* FMStopTests.m */; };
+		47A1B95B17E7748800121BCA /* FMPredictionSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A1B95A17E7748800121BCA /* FMPredictionSet.m */; };
+		47A1B95E17E7753900121BCA /* FMPredictionSetParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A1B95D17E7753900121BCA /* FMPredictionSetParser.m */; };
+		47A1B96117E7762400121BCA /* FMDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A1B96017E7762400121BCA /* FMDirection.m */; };
+		47F245CD17E73E4F009D70BB /* FMPrediction.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F245CC17E73E4F009D70BB /* FMPrediction.m */; };
+		47F245D717E7408A009D70BB /* FMStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F245D617E7408A009D70BB /* FMStop.m */; };
 		DCDA1BD917A5F46800A971CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDA1BD817A5F46800A971CF /* Foundation.framework */; };
 		DCDA1BDE17A5F46800A971CF /* FMNextBus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCDA1BDD17A5F46800A971CF /* FMNextBus.h */; };
 		DCDA1BE817A5F46800A971CF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCDA1BE717A5F46800A971CF /* SenTestingKit.framework */; };
@@ -66,6 +73,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		47A1B95417E758D500121BCA /* FMStopParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMStopParser.h; sourceTree = "<group>"; };
+		47A1B95517E758D500121BCA /* FMStopParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMStopParser.m; sourceTree = "<group>"; };
+		47A1B95717E75D0700121BCA /* FMStopTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMStopTests.m; sourceTree = "<group>"; };
+		47A1B95917E7748800121BCA /* FMPredictionSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPredictionSet.h; sourceTree = "<group>"; };
+		47A1B95A17E7748800121BCA /* FMPredictionSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPredictionSet.m; sourceTree = "<group>"; };
+		47A1B95C17E7753900121BCA /* FMPredictionSetParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPredictionSetParser.h; sourceTree = "<group>"; };
+		47A1B95D17E7753900121BCA /* FMPredictionSetParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPredictionSetParser.m; sourceTree = "<group>"; };
+		47A1B95F17E7762400121BCA /* FMDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDirection.h; sourceTree = "<group>"; };
+		47A1B96017E7762400121BCA /* FMDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDirection.m; sourceTree = "<group>"; };
+		47F245CB17E73E4F009D70BB /* FMPrediction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMPrediction.h; sourceTree = "<group>"; };
+		47F245CC17E73E4F009D70BB /* FMPrediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMPrediction.m; sourceTree = "<group>"; };
+		47F245D517E7408A009D70BB /* FMStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMStop.h; sourceTree = "<group>"; };
+		47F245D617E7408A009D70BB /* FMStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMStop.m; sourceTree = "<group>"; };
 		DCDA1BD517A5F46800A971CF /* libFMNextBus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMNextBus.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDA1BD817A5F46800A971CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCDA1BDC17A5F46800A971CF /* FMNextBus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FMNextBus-Prefix.pch"; sourceTree = "<group>"; };
@@ -149,6 +169,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47F245CA17E73E29009D70BB /* Predictions */ = {
+			isa = PBXGroup;
+			children = (
+				47A1B95917E7748800121BCA /* FMPredictionSet.h */,
+				47A1B95A17E7748800121BCA /* FMPredictionSet.m */,
+				47A1B95C17E7753900121BCA /* FMPredictionSetParser.h */,
+				47A1B95D17E7753900121BCA /* FMPredictionSetParser.m */,
+				47F245CB17E73E4F009D70BB /* FMPrediction.h */,
+				47F245CC17E73E4F009D70BB /* FMPrediction.m */,
+				47A1B95F17E7762400121BCA /* FMDirection.h */,
+				47A1B96017E7762400121BCA /* FMDirection.m */,
+			);
+			name = Predictions;
+			sourceTree = "<group>";
+		};
+		47F245D417E7407B009D70BB /* Stops */ = {
+			isa = PBXGroup;
+			children = (
+				47F245D517E7408A009D70BB /* FMStop.h */,
+				47F245D617E7408A009D70BB /* FMStop.m */,
+				47A1B95417E758D500121BCA /* FMStopParser.h */,
+				47A1B95517E758D500121BCA /* FMStopParser.m */,
+			);
+			name = Stops;
+			sourceTree = "<group>";
+		};
 		DCDA1BCC17A5F46800A971CF = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +240,8 @@
 				DCF4798A17A5FE6C005AA7ED /* FMNextBusConstants.m */,
 				DCF4799517A606D0005AA7ED /* Agency feeds */,
 				DCF479A917A61A87005AA7ED /* Routes */,
+				47F245D417E7407B009D70BB /* Stops */,
+				47F245CA17E73E29009D70BB /* Predictions */,
 			);
 			path = FMNextBus;
 			sourceTree = "<group>";
@@ -209,6 +257,7 @@
 		DCDA1BEF17A5F46800A971CF /* FMNextBusTests */ = {
 			isa = PBXGroup;
 			children = (
+				47A1B95717E75D0700121BCA /* FMStopTests.m */,
 				DCF479A317A616FE005AA7ED /* FMAgencyTests.h */,
 				DCF479A417A616FE005AA7ED /* FMAgencyTests.m */,
 				DCF479AD17A6210E005AA7ED /* FMRouteTests.h */,
@@ -383,19 +432,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A1B95E17E7753900121BCA /* FMPredictionSetParser.m in Sources */,
 				DCF4797917A5F87A005AA7ED /* AFHTTPClient.m in Sources */,
+				47A1B96117E7762400121BCA /* FMDirection.m in Sources */,
 				DCF4797A17A5F87A005AA7ED /* AFHTTPRequestOperation.m in Sources */,
 				DCF4797B17A5F87A005AA7ED /* AFImageRequestOperation.m in Sources */,
+				47A1B95617E758D500121BCA /* FMStopParser.m in Sources */,
 				DCF4797C17A5F87A005AA7ED /* AFJSONRequestOperation.m in Sources */,
 				DCF4797D17A5F87A005AA7ED /* AFNetworkActivityIndicatorManager.m in Sources */,
 				DCF4797E17A5F87A005AA7ED /* AFPropertyListRequestOperation.m in Sources */,
+				47F245D717E7408A009D70BB /* FMStop.m in Sources */,
 				DCF4797F17A5F87A005AA7ED /* AFURLConnectionOperation.m in Sources */,
 				DCF4798017A5F87A005AA7ED /* AFXMLRequestOperation.m in Sources */,
 				DCF4798117A5F87A005AA7ED /* UIImageView+AFNetworking.m in Sources */,
 				DCF4798817A5FC8D005AA7ED /* FMAgency.m in Sources */,
 				DCF4798B17A5FE6C005AA7ED /* FMNextBusConstants.m in Sources */,
+				47A1B95B17E7748800121BCA /* FMPredictionSet.m in Sources */,
 				DCF4799417A60511005AA7ED /* FMAgencyParser.m in Sources */,
 				DCF479A817A61A84005AA7ED /* FMRoute.m in Sources */,
+				47F245CD17E73E4F009D70BB /* FMPrediction.m in Sources */,
 				DCF479AC17A61EE9005AA7ED /* FMRouteParser.m in Sources */,
 				DCF479B217A62449005AA7ED /* NSURLRequest+FMNextBus.m in Sources */,
 			);
@@ -407,6 +462,7 @@
 			files = (
 				DCF479A517A616FE005AA7ED /* FMAgencyTests.m in Sources */,
 				DCF479AF17A6210E005AA7ED /* FMRouteTests.m in Sources */,
+				47A1B95817E75D0700121BCA /* FMStopTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -456,7 +513,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -466,6 +523,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -479,7 +537,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -493,7 +551,7 @@
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "FMNextBus/FMNextBus-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,7 +567,7 @@
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "FMNextBus/FMNextBus-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

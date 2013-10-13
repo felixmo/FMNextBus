@@ -58,4 +58,33 @@
                                  beforeDate:[NSDate dateWithTimeIntervalSinceNow:10]];
 }
 
+- (void)testFetchSpecifcRouteFromTTC {
+ 
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    
+    FMAgency *ttc = [FMAgency agencyWithTag:@"ttc"];
+    [ttc fetchRouteWithTag:@"509"
+                   success:^(FMRoute *route) {
+                       NSLog(@"-------------------------");
+                       NSLog(@"      FETCHED ROUTE      ");
+                       NSLog(@"-------------------------");
+                       NSLog(@"| ROUTE");
+                       NSLog(@"|   tag: %@", route.tag);
+                       NSLog(@"|   title: %@", route.title);
+                       NSLog(@"|   shortTitle: %@", route.shortTitle);
+                       NSLog(@"-------------------------\n");
+                       
+                       STAssertTrue(route != nil, nil);
+                       
+                       dispatch_semaphore_signal(semaphore);
+                   }
+                   failure:^(NSError *error) {
+                       STFail([error description]);
+                   }];
+    
+    while (dispatch_semaphore_wait(semaphore, DISPATCH_TIME_NOW))
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
+                                 beforeDate:[NSDate dateWithTimeIntervalSinceNow:10]];
+}
+
 @end

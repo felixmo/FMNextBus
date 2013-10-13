@@ -13,6 +13,8 @@
 
 extern NSString *const FMNextBusCommandAgencyList;
 extern NSString *const FMNextBusCommandRouteList;
+extern NSString *const FMNextBusCommandRouteConfig;
+extern NSString *const FMNextBusCommandPredictions;
 
 
 /**
@@ -20,3 +22,5 @@ extern NSString *const FMNextBusCommandRouteList;
  */
 
 extern NSString *const FMNextBusParameterAgency;
+extern NSString *const FMNextBusParameterRoute;
+extern NSString *const FMNextBusParameterStopId;

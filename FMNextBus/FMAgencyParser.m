@@ -67,7 +67,8 @@
         
         // Map retrieved feed attributes to feed object properties
         [attributeDict enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-            [feed setValue:obj forKey:key];
+            if ([feed respondsToSelector:NSSelectorFromString(key)])
+                [feed setValue:obj forKey:key];
         }];
     }
 }

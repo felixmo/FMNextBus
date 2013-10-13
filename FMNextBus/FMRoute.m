@@ -18,6 +18,7 @@
 #pragma mark - Property synthesizations
 
 @synthesize tag;
+@synthesize agency;
 @synthesize title;
 @synthesize shortTitle;
 

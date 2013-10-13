@@ -1,36 +1,35 @@
 //
-//  FMRouteParser.m
+//  FMStopParser.m
 //  FMNextBus
 //
-//  Created by Felix Mo on 2013-07-28.
+//  Created by Felix Mo on 2013-09-16.
 //  Copyright (c) 2013 Felix Mo. All rights reserved.
 //
 
-
-#import "FMRouteParser.h"
-
+#import "FMStopParser.h"
+#import "FMStop.h"
 
 #pragma mark - Private interface
 
-@interface FMRouteParser ()
+@interface FMStopParser ()
 
 @property (nonatomic, strong) NSMutableString *currentElementValue;
-@property (nonatomic, strong) FMRoute *route;
-@property (nonatomic, strong) NSMutableArray *routes;
+@property (nonatomic, strong) FMStop *stop;
+@property (nonatomic, strong) NSMutableArray *stops;
 
 @end
 
 
 #pragma mark - Implementation
 
-@implementation FMRouteParser
+@implementation FMStopParser
 
 
 #pragma mark - Property synthesizations
 
 @synthesize currentElementValue;
-@synthesize route;
-@synthesize routes;
+@synthesize stop;
+@synthesize stops;
 
 
 #pragma mark - Initialization
@@ -39,7 +38,7 @@
     
     if (self = [super init]) {
         
-        routes = [[NSMutableArray alloc] init];
+        stops = [[NSMutableArray alloc] init];
         
         return self;
     }
@@ -51,8 +50,8 @@
 
 #pragma mark - Accessors
 
-- (NSArray *)parsedRoutes {
-    return [NSArray arrayWithArray:routes];
+- (NSArray *)parsedStops {
+    return [NSArray arrayWithArray:stops];
 }
 
 
@@ -60,15 +59,15 @@
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict {
 	
-    if ([elementName isEqualToString:@"route"]) {
-        // New route
+    if ([elementName isEqualToString:@"stop"]) {
+        // New Stop
         
-        route = [[FMRoute alloc] init];
+        self.stop = [[FMStop alloc] init];
         
-        // Map retrieved route attributes to route object properties
+        // Map retrieved Stop attributes to Stop object properties
         [attributeDict enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-            if ([route respondsToSelector:NSSelectorFromString(key)])
-                [route setValue:obj forKey:key];
+            if ([self.stop respondsToSelector:NSSelectorFromString(key)])
+                [self.stop setValue:obj forKey:key];
         }];
     }
 }
@@ -90,10 +89,10 @@
         return;
     }
     
-    if ([elementName isEqualToString:@"route"]) {
-        // Done with route entry – add the parsed route object to our route array
-        [routes addObject:route];
-        route = nil;
+    if ([elementName isEqualToString:@"Stop"]) {
+        // Done with Stop entry – add the parsed Stop object to our Stop array
+        [stops addObject:stop];
+        stop = nil;
     }
     
     currentElementValue = nil;
